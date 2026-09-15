@@ -1,0 +1,55 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e2e2e2;
+            padding: 30px;
+        }
+
+        .contenedor {
+            background-color: white;
+            width: 300px;
+            margin: 0 auto; /* Centrar el cuadro */
+            padding: 20px;
+            border: 1px solid #999;
+            box-shadow: 2px 2px 5px #ccc; /* sombra */
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .grupo {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input {
+            width: 90%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        /* Darle color gris a la caja que no se puede editar */
+        input[readonly] {
+            background-color: #eeeeee;
+            color: #333;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            background-color: #0055cc;
+            color: white;
+            border: 1px solid #0044aa;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #0044aa;
+        }

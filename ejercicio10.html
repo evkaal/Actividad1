@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculadora de Temperatura</title>
+    <link rel="stylesheet" href="CS2/ejercicio10.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h3>Convertidor °C a °F</h3>
+        
+        <div class="grupo">
+            <label>Grados Celsius (°C):</label>
+            <br>
+            <input type="text" id="txtCelsius" placeholder="Ej. 25">
+        </div>
+
+        <div class="grupo">
+            <button onclick="calcular()">Convertir</button>
+        </div>
+
+        <div class="grupo">
+            <label>Resultado en Fahrenheit:</label>
+            <br>
+            <input type="text" id="txtFahrenheit" readonly>
+        </div>
+    </div>
+
+    <script>
+        function calcular() {
+            // Obtener el valor de la caja de texto
+            var valorCelsius = document.getElementById('txtCelsius').value;
+            var cajaResultado = document.getElementById('txtFahrenheit');
+
+            // Limpiar la caja de resultado cada vez que se presiona el botón
+            cajaResultado.value = "";
+
+            // Validación 1: Que no esté vacío
+            if (valorCelsius == "") {
+                alert("Por favor, ingresa un valor en Celsius.");
+                return; // Detiene la función
+            }
+
+            // Validación 2: Que sea un número
+            if (isNaN(valorCelsius)) {
+                alert("El valor ingresado debe ser un número.");
+                return;
+            }
+
+            // Convertir el texto a número decimal
+            var c = parseFloat(valorCelsius);
+
+            // Aplicar la fórmula: F = (C * 9/5) + 32
+            var f = (c * 9 / 5) + 32;
+
+            // Mostrar el resultado concatenando la letra F
+            cajaResultado.value = f + " °F";
+        }
+    </script>
+
+</body>
+</html>
