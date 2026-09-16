@@ -1,0 +1,29 @@
+/* Estilos básicos para que el formulario se vea ordenado */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.calculadora {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.botones {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}

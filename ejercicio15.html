@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="css/ejercicio15.css">
+   
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gestión de estudiantes</h1>
+
+        
+        <div class="form-group">
+            <label for="nombre">Nombre del estudiante:</label>
+            <input type="text" id="nombre" placeholder="Ej. Juan">
+        </div>
+
+        <div class="form-group">
+            <label for="calificacion">Calificación:</label>
+            <input type="number" id="calificacion" placeholder="Ej. 85" min="0" max="100">
+        </div>
+
+        <div class="button-group">
+            <button id="btnAgregar">Agregar estudiante</button>
+            <button id="btnCalcular">Calcular</button>
+        </div>
+
+        
+        <div class="list-container">
+            <h3>Estudiantes agregados:</h3>
+            <ul id="listaEstudiantes"></ul>
+        </div>
+
+     
+        <div class="results-container">
+            <h3>Resultados</h3>
+            
+            <div class="form-group">
+                <label for="promedio">Calificación promedio:</label>
+                <input type="text" id="promedio" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="maxima">Estudiante con la calificación más alta:</label>
+                <input type="text" id="maxima" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="minima">Estudiante con la calificación más baja:</label>
+                <input type="text" id="minima" readonly>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>
